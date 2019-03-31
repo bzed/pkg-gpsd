@@ -1,3 +1,4 @@
 full-systemd-support
 gpsd_hotplug_rules_disable_generic_serial_converters
 ed205512d_Fixes-SConstruct-for-SCons-3.0.0
+json-cve-fix
