@@ -4,9 +4,13 @@ gpsd (3.17-6) unstable; urgency=medium
     buffer overflow, which may allow remote attackers to execute
     arbitrary code on embedded platforms via traffic on Port
     2947/TCP or crafted JSON inputs.
-    CVE-2018-17937
-    Closes: #925327
-  * [71020f4f] Update gbp config
+    CVE-2018-17937 / Closes: #925327
+    The update also fixes several other json parser bugs.
+    - ECMA-404 says JSON \u must have 4 hex digits
+    - Allow for \u escapes with fewer than 4 digits.
+    - Fail on bad escape string.
+  * [71020f4f] Update git-buildpackage config to build from the
+    buster branch.
 
  -- Bernd Zeimetz <bzed@debian.org>  Fri, 05 Apr 2019 23:31:30 +0200
 
