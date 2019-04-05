@@ -1,9 +1,14 @@
-gpsd (3.17-6) UNRELEASED; urgency=medium
+gpsd (3.17-6) unstable; urgency=medium
 
-  * [0a8e4e18] Pull json fixes form upstream
+  * [0a8e4e18] Pull json fixes from upstream to fix a stack-based
+    buffer overflow, which may allow remote attackers to execute
+    arbitrary code on embedded platforms via traffic on Port
+    2947/TCP or crafted JSON inputs.
+    CVE-2018-17937
+    Closes: #925327
   * [71020f4f] Update gbp config
 
- -- Bernd Zeimetz <bzed@debian.org>  Mon, 01 Apr 2019 00:24:07 +0200
+ -- Bernd Zeimetz <bzed@debian.org>  Fri, 05 Apr 2019 23:31:30 +0200
 
 gpsd (3.17-5) unstable; urgency=medium
 
