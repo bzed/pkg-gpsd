@@ -1,3 +1,13 @@
+gpsd (3.17-7) unstable; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * [ffb32ff8] Allow gpsd.service to be enabled by the admin at boot time.
+    Be sure to keep it disabled. The admin needs to explicitely start
+    it if needed.
+    Closes: #928681
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sat, 25 May 2019 11:55:30 +0200
+
 gpsd (3.17-6) unstable; urgency=medium
 
   * [0a8e4e18] Pull json fixes from upstream to fix a stack-based
